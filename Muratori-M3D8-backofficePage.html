@@ -15,19 +15,26 @@
 </head>
 
 <body>
-    <h1>STRIVAZON-BackOffice</h1>
+    <center>
+        <h1>STRIVAZON-BackOffice</h1>
+    </center>
+
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>Insert your product</h2>
-                <div class='d-flex flex-column'>
-                    <input type="text" id='name' placeholder='insert the name...'>
-                    <input type="text" id='description' placeholder='insert the description...'>
-                    <input type="text" id='brand' placeholder='insert the brand...'>
-                    <input type="text" id='img' placeholder='insert the image url...'>
-                    <input type="number" id='price' placeholder='insert the price...'>
-                </div>
-                <button class='btn btn-success' onclick='createData()'>Add the product</button>
+                <center>
+                    <h1>Insert your product</h1>
+                    <div class='d-flex flex-column w-50'>
+                        <input type="text" id='name' placeholder='insert the name...' class='mt-4 rounded'>
+                        <input type="text" id='description' placeholder='insert the description...' style='height:80px;'
+                            size="30" class='mt-4 rounded '>
+                        <input type="text" id='brand' placeholder='insert the brand...' class='mt-4 rounded'>
+                        <input type="text" id='img' placeholder='insert the image url...' class='mt-4 rounded'>
+                        <input type="number" id='price' placeholder='insert the price...' class='mt-4 rounded'>
+                    </div>
+                    <button class='btn btn-success mt-5' onclick='createData()'>Add the product</button>
+                </center>
+
             </div>
 
 
