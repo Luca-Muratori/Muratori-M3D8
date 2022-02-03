@@ -24,18 +24,21 @@ const renderData = (data) => {
         col.classList.add('col')
         col.innerHTML = `
                     <div class="card" style="width: 18rem;">
-                        <img style='max-height:280px; object-fit:cover' src="${product.imageUrl}"
+                        <img style='min-height:280px; max-height:280px; object-fit:cover' src="${product.imageUrl}"
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">${product.name}</h5>
                             <p class="card-text  text-truncate" style=' max-width: 400px;'>${product.description}</p>
                             <p>$${product.price}</p>
                             <a href="#">${product.brand}</a>
-                        </div>
+                            </div>
+                            <a href='#' onclick='deleteCard()'>Delete</a>
                     </div>
         `
         row.appendChild(col)
     });
+
 }
+
 
 getData()
